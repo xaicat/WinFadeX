@@ -1,4 +1,4 @@
-# ⚡ WinFadeX
+# ⚡WinFadeX⚡
 WinFadeX is a lightweight AutoHotkey script that automatically applies a translucent effect to newly opened windows on your desktop, giving your workspace a sleek, modern look. With a simple hotkey toggle (Ctrl + Alt + Right Click), you can also manually fade or restore any active window's transparency in real time.
 
 ## ✨ Features
