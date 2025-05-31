@@ -5,7 +5,7 @@ Persistent
 global processedWindows := Map()
 global windowTransparency := Map()
 
-; Timer to auto-apply transparency to new windows
+; Timer to apply transparency to new windows
 SetTimer CheckNewWindows, 500
 
 CheckNewWindows()
@@ -28,8 +28,8 @@ CheckNewWindows()
     }
 }
 
-; Ctrl+Alt+Right Click toggles transparency for the active window
-^!RButton::{
+; Toggle transparency for the active window
+^!RButton:: {
     hwnd := WinExist("A")
     current := WinGetTransparent("ahk_id " hwnd)
     if (current = "")
@@ -44,9 +44,9 @@ CheckNewWindows()
     }
 }
 
-; Ctrl+Alt+Mouse Wheel Up/Down adjusts transparency
-^!WheelUp::AdjustTransparency(+20)
-^!WheelDown::AdjustTransparency(-20)
+; Adjust transparency using mouse wheel
+^!WheelUp::AdjustTransparency(+5)
+^!WheelDown::AdjustTransparency(-5)
 
 AdjustTransparency(delta) {
     hwnd := WinExist("A")
@@ -64,4 +64,18 @@ AdjustTransparency(delta) {
 
 Clamp(value, min, max) {
     return (value < min) ? min : (value > max) ? max : value
+}
+
+; Minimize all windows except the active one
+^!m:: {
+    activeHwnd := WinExist("A")
+    if (!activeHwnd)
+        return
+
+    windowList := WinGetList()
+    for hwnd in windowList {
+        if (hwnd != activeHwnd) {
+            try WinMinimize("ahk_id " hwnd)
+        }
+    }
 }
