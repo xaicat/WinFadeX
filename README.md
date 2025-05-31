@@ -92,7 +92,7 @@ Feel free to fork, improve, and submit PRs. Suggestions and feedback are welcome
 
 This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
-You are free to use, share, and modify this script, even for commercial purposes — **but you must give appropriate credit**. If you publish or share this project elsewhere, please include a link to the original [GitHub repository](https://github.com/xaicat/WinFadeX) and credit the creator.
+You are free to use, share, and modify this script, even for commercial purposes — **but you must give appropriate credit**. If you publish or share this project elsewhere, please include a link to the original [GitHub repository](https://github.com/xaicat/WinFadeX) and credit the author.
 
 © xaicat 2025
 
