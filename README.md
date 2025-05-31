@@ -30,6 +30,16 @@
 
 ---
 
+## 🕹️ Preview
+<https://github.com/user-attachments/assets/de89ebee-3f94-4cfd-ab16-62cfd793d3a3>
+
+---
+
+## 📸 Screenshots
+![t1](./Preview/screenshot.png)
+
+---
+
 ## 🔧 Usage
 
 1. **Launch** the script by running `WinFadeX.ahk`.
